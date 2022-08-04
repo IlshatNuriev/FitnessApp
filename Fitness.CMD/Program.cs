@@ -56,14 +56,14 @@ namespace FitnessApp.CMD
         {
             while (true)
             {
-                Console.WriteLine("Введите {name}: ");
+                Console.WriteLine($"Введите {name}: ");
                 if (double.TryParse(Console.ReadLine(), out double value))
                 {
                     return value;
                 }
                 else
                 {
-                    Console.WriteLine($"Неверный формат {name}.");
+                    Console.WriteLine($"Неверный формат {name}а.");
                 }
             }
         }
